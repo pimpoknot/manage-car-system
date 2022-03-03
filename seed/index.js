@@ -17,6 +17,9 @@ const carCategory = new CarCategory({
 
 })
 
+
+// git status test credencials
+
 const cars = []
 const customers = []
 for(let index = 0; index <= ITEMS_AMOUNT; index++) {
