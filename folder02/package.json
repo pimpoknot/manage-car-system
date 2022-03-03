@@ -7,12 +7,16 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npx mocha -w --parallel **/**/*.test.js",
+    "test:cov": "npx nyc npx mocha -w --parallel **/**/*.test.js",
     "seed": "node ./seed"
   },
   "author": "Marcos Maverick",
   "license": "ISC",
   "devDependencies": {
-    "@faker-js/faker": "^6.0.0-alpha.7"
+    "@faker-js/faker": "^6.0.0-alpha.7",
+    "mocha": "^8.4.0",
+    "nyc": "^15.1.0",
+    "sinon": "^9.2.4"
   }
 }
